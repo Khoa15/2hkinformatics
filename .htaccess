@@ -1,0 +1,14 @@
+
+RewriteEngine On
+
+RewriteRule "^([a-zA-Z_-]+).html$" "index.php?route=$1"
+
+RewriteRule "admin.html" "/@admin/index.php"
+
+RewriteRule "^action/([a-zA-Z_-]+)/([a-zA-Z_-]+)/$" "/query/$1/$2.php"
+
+RewriteRule "^admin/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$" "index.php?route=admin&to=$1&name=$2"
+
+RewriteRule "^admin/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$" "index.php?route=admin&to=$1&name=$2&id=$3"
+
+RewriteRule "^admin/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$" "index.php?route=admin&to=$1&name=$2&query=$3"

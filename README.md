@@ -1,2 +1,2 @@
 # 2hkinformatics
-My first project built when I studied at my high school. Just simple but it is a huge step in my journey.
+My first project was built when I was in high school. It was simple but it was a huge step in my journey.
